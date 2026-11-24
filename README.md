@@ -18,3 +18,17 @@ JavaScript
 Только нативные API браузера  
 Без сборщиков и бандлеров  
 Деплой на VPS  
+
+## Запуск
+
+Через локальный HTTP-сервер:  
+
+```npm install -D lite-server```
+
+```
+"scripts": {
+  "dev": "lite-server"
+}
+```
+
+```npm run dev```
