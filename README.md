@@ -33,7 +33,7 @@ JavaScript
 
 ```npm run dev```
 
-## Раздел Neovim плагины
+## Neovim плагины
 
 
 | Категория (EN) | Категория (RU) | Описание |
