@@ -9,9 +9,71 @@
   </head>
 
   <body>
-    <header class="text-7xl border-5 border-b-amber-600">Hello</header>
-    <nav></nav>
-    <main></main>
+
+    <header class='border-5 border-red-500 w-full h-46 flex justify-center'>
+      <div class='border w-7xl h-full flex flex-col'>
+        <div class='w-full text-5xl py-8'>Roman Balashov | Software Engineer</div>
+        <div class='border-t flex-1 flex justify-between'>
+          <nav class='flex items-center'>
+            <ul class='text-2xl flex gap-6'>
+              <li><a href="">Feed</a></li>
+              <li><a href="">Neovim plugins</a></li>
+              <li><a href="">Neovim python IDE</a></li>
+              <li><a href="">Noevim JS/TS Code Editor</a></li>
+              <li><a href="">About me</a></li>
+            </ul>
+          </nav>
+          <div class='flex items-center'>
+            <p class="text-2xl "><a href="">Login</a></p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class='border-5 border-yellow-400 flex justify-center'>
+
+      <!-- Wrapper -->
+      <div class='border w-7xl h-full flex flex-col'>
+
+        <!-- Filters -->
+        <div class='border mt-8 border-gray-400 bg-gray-100 w-full h-18 flex items-center text-xl pl-6 gap-6'>
+          <!-- search by name filter -->
+          <input type="search" name="" id="" class="border pl-4 h-11.5 rounded">
+          <!-- categories filter -->
+          <select name="categories" id="category-filter" class="border p-2 rounded">
+            <option value="">Не выбрано</option>
+            <option value="">Синтаксис и подсветка</option>
+            <option value="">Навигация и редактирование</option>
+            <option value="">Интерфейс и оформление</option>
+          </select>
+        </div>
+
+        <!-- Plugins list -->
+        <section id='catalog' class='border border-blue-300 w-full py-8 flex flex-col gap-6'>
+
+          <article class='border-2 border-gray-200 pl-6 py-6'>
+            <h3 class='text-3xl'>folke/noice.nvim</h3> 
+            <p class='pt-2'>Заменяет стандартный UI сообщений, командной строки и popup-меню: уведомления, история, LSP-интерфейсы.</p>
+            <p class='pt-1 text-sm'>url: <a href='https://github.com/folke/noice.nvim'>github.com/folke/noice.nvim</a></p>
+            <p class='pt-1 text-sm'>category: interface</a></p>
+            <p class='pt-2 text-sm italic'>tags: ui, notifications, command-line</p>
+          </article>
+
+          <article class='border-2 border-gray-200 pl-6 py-6'>
+            <h3 class='text-3xl'>folke/noice.nvim</h3> 
+            <p class='pt-2'>Заменяет стандартный UI сообщений, командной строки и popup-меню: уведомления, история, LSP-интерфейсы.</p>
+            <p class='pt-1 text-sm'>url: <a href='https://github.com/folke/noice.nvim'>github.com/folke/noice.nvim</a></p>
+            <p class='pt-1 text-sm'>category: interface</a></p>
+            <p class='pt-2 text-sm italic'>tags: ui, notifications, command-line</p>
+          </article>
+
+        </section>
+
+      </div>
+
+    </main>
+
+    <script type="module" src="js/main.js"></script>
   </body>
 
 </html>
